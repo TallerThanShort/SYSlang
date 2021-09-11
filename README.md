@@ -1,10 +1,19 @@
 # SYSlang
 SYSlang, is an open-source multi-functional coding language.
-To import assets, use 'lang-imp {asset name}'
+To import these assets, use
+```
+lang-imp SYSlang_testV;
 
-Please note: This is not an installer. These files are part of SYStemware. If you don't want to use SYStemware's OS, the same results can usually be obtained using any SYS-(coding language) translator, such as V1RU5' SYS-CMDlet Translator, a translator to use SYSlang in Windows CMD (requires administrator perms).
+from SYSlang_testV enter comm;
+from comm enter ya;
+from ya enter GUIs;
 
-If you are installing SYStemware (deamos) please be careful. It is recommended to use a VM, as an incorrect installation can completely corrupt the harddrive.
+dl('SYSlang' from(GUIs)).to('A:/');
+```
 
-It is recommended to have at least 6.4 Gib available space for the GUI's + apps and some additional tools that are required for SYSl development. It is also recommended to use a VM (Virtual Machine).
+Then reboot into nogui and type any of my GUI names to execute them.
+
+Please note: These files are my personal (and dumb) edit of SYStemware's GUI's, with my personal code editor (inspired by Sublime Text).
+
+I recommended you have at least 1.1 Gib free space for the GUI's + apps that my environments will download and install.
 
