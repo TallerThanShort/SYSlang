@@ -1,0 +1,14 @@
+require monitor;
+
+lang-imp SYS_IMP_AI;
+lang-imp SYSlang_testV;
+
+from SYSlang_testV enter GUIs;
+from SYS_IMP_AI enter all;
+from SYSlang_testV enter comm;
+from comm enter ya;
+from ya enter leek;
+
+dl('leek.jar' from(leek)).to('A:/');
+dl(from(systemware.ga/coder/codelangs/supported)).to('A:/');
+exe('leek.jar');
