@@ -9,19 +9,14 @@ from SYS_IMP_AI enter all;
 lang requires = nogui dist(this).toEdit;
 lang requisit == nogui;
 
-nogui user.create.functions.allow(all).toEdit('name');
-nogui user.create.pull;
-
 ex.disable.shell;
-ex.disable.powershell;
+ex.enable.d.h.devhelp;
 ex.disable.ae;
 ex.disable.au;
 ex.disable.ligui;
 
-ex.select(user.from('nogui'), user.from('systemware.ga'));
-
-for translators(C, JS, C#, CPP, Ruby, Py, Java){
-    dl(from(systemware.ga/trans/ enter all).to('A:/'))
+for translators(C, JS, C#, CPP, Ruby, Py, Java, LUA){
+    dl(from('systemware.ga/trans/') enter all).to('A:/')
 }
 
 on boot.complete{
@@ -29,30 +24,16 @@ on boot.complete{
 }
 for Desktop{
     nogui.close('this');
-    uses('./testtop/');
-    GUI.open('SYStem_testtop');
-}
-
-for Game{
-    nogui.close('this');
-    uses('./games/');
-    GUI.open('SYStem_testtop');
-    monitor.setResourceLevel(High);
+    uses('./desktop/');
+    GUI.open('SYStem_desktop');
 }
 
 for Code{
     nogui.close('this');
     uses('./code/');
-    GUI.open('SYStem_codertop');
+    GUI.open('SYStem_leaktop');
 }
 
-for user.a{
-    nogui.close('this');
-    uses('./');
-    GUI.open('./testtop/SYStem_testtop');
-    monitor.setResourceLevel(High);
-}
-
-for ResourceLevel{
-    monitor.resourceLevel.reveal;
+for user.create{
+    boot;
 }
